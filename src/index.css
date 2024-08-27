@@ -9,5 +9,8 @@ body {
     border: 1px solid black;
     background-image: url('/src/assets/david-schultz-SrewPUfo2c0-unsplash.jpg');
     background-size: cover;
+    background-position: 50% 40%;
     overflow: hidden;
+    margin: 0rem;
+    padding: 0rem;
 }
