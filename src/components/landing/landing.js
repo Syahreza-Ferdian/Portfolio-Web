@@ -6,7 +6,7 @@ function Landing() {
     return (
         <section className="landing">
             <div className="container h-100">
-                <div className="d-flex justify-content-center align-items-center vh-100">
+                <div className="d-flex justify-content-center align-items-center min-vh-100">
                     <div className="wrapper text-center">
                         <p className="upper-text">Hello, I'm</p>
                         <p className="name-text">Syahreza Fisti Ferdian</p>
