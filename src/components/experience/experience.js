@@ -1,5 +1,6 @@
 import React from "react";
 import './experience.css';
+import MyCV from '../../assets/MyCV.pdf';
 
 function Experience() {
     return (
@@ -47,6 +48,9 @@ function Experience() {
                                 </div>
                             </div>
                         </div>
+
+                        <h5 class="fw-bold mt-5 mb-4">My CV</h5>
+                        <iframe src={MyCV} width="100%" height="800px"></iframe>
                     </div>
                 </div>
             </div>
