@@ -13,7 +13,7 @@ function Experience() {
 
                     <div class="container mt-5">
                         <h5 class="fw-bold mb-4">My Experiences So Far</h5>
-                        <div class="experience px-5 py-4 mt-1">
+                        <div class="experience mt-1">
                             <div class="experience-item border-bottom">
                                 <div class="timeline-icon"></div>
                                 <div class="experience-content d-flex justify-content-between">

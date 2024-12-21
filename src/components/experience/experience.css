@@ -9,6 +9,7 @@
 .experience {
     background-color: rgb(22, 31, 31);
     border-radius: 10px;
+    padding: 3rem 4rem;
 }
 
 .experience-item {
@@ -64,5 +65,18 @@
 @media(max-width:766.9px){
     .offcanvas-header {
         padding: 2rem 2rem !important;
+    }
+
+    .job-title, .company-name, .duration {
+        font-size: 12px;
+    }
+
+    .timeline-icon {
+        width: 10px;
+        height: 10px;
+    }
+
+    .experience {
+        padding: 1rem 1.2rem;
     }
 }
