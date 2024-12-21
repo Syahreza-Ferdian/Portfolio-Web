@@ -1,3 +1,15 @@
+.landing {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    overflow: auto; 
+}
+
+.container-landing {
+    text-align: center; 
+}
+
 .upper-text {
     font-weight: 400;
     margin-bottom: 1px;
@@ -22,5 +34,13 @@
 
     .desc-land {
         font-size: 13px;
+    }
+
+    .container-landing {
+        height: 100%;
+    }
+
+    .wrapper {
+        margin-top: 70%;
     }
 }
