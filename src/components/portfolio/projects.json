@@ -39,7 +39,7 @@
         "title": "Computy-AI Backend Service (REST API)",
         "date": "Sep 2024 - Nov 2024",
         "description": "Design and develop a REST API service using Golang for an AI-powered learning platform specializing in Computer Science. Integrating AI model to dynamically generate course based on user input. Implementing Redis and WebSocket. Responsible for creating comprehensive integration tests to ensure seamless interaction between backend services, AI model, and the database.",
-        "repositoryLink": "https://github.com/Syahreza-Ferdian/"
+        "repositoryLink": ""
     },
     {
         "title": "M&M Rental Backend Service (REST API)",
@@ -64,5 +64,11 @@
         "date": "Nov 2023 - Dec 2023",
         "description": "Design and develop Java code implementation for a gaming center on my faculty. Our team designed a simple app called 'Corner Sense' to facilitate students in finding and booking gaming spots in the gaming center. The app allows users to view available spots, book a spot, and receive notifications when their booking is confirmed. The app also includes a feature to view the specifications of each gaming spot, such as the type of console available and the games installed.",
         "repositoryLink": "https://github.com/Syahreza-Ferdian/Corner-Sense"
+    },
+    {
+        "title": "Portfolio Website",
+        "date": "Nov 2024 - Now",
+        "description": "It is this website that you are currently viewing. I designed and developed this portfolio website to showcase my projects, skills, and experience. The website is built using React JS framework with a responsive design that adapts to different screen sizes. I also integrated a 'Contact Me' form that integrated into my email service to receive message from visitors.",
+        "repositoryLink": ""
     }
 ]
