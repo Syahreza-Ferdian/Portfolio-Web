@@ -16,13 +16,13 @@ function Navbar() {
                             <button className="nav-link" id="#about" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-about" aria-controls="offcanvasBottom">About</button>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Resume</a>
+                            <a className="nav-link" id="#experience" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-experience" aria-controls="offcanvasBottom">Experience</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Portfolio</a>
+                            <a className="nav-link" href="#portfolio" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-portfolio" aria-controls="offcanvasBottom">Portfolio</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Contact</a>
+                            <a className="nav-link" href="#contact" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-contact" aria-controls="offcanvasBottom">Contact</a>
                         </li>
                     </ul>
                 </div>
