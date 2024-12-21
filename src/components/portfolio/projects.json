@@ -3,13 +3,13 @@
         "title": "GTA San Andreas Multiplayer Gamemode",
         "date": "Mar 2023 - Apr 2023 (Discontinue)",
         "description": "Designed and implemented a freeroam gamemode with functional features and server-side configuration. Developed using PAWN scripting language for the SA-MP platform. The gamemode includes features such as vehicle spawning, player commands, weapon spawning, player teleport, vehicle customization, and more.",
-        "repositoryLink": "https://github.com/Syahreza-Ferdian/GTA-SAMP-SimpleFreeroam-Gamemode"
+        "repositoryLink": "https://github.com/Syahreza-Ferdian/GTA-SAMP-Simple-Freeroam-Gamemode"
     },
     {
         "title": "Car Rent Web App",
         "date": "Oct 2023 - Dec 2023",
         "description": "Developed front-end and back-end for a car rental information system as a database programming final project. Developed using PHP native and MySQL database.",
-        "repositoryLink": "https://github.com/Syahreza-Ferdian/Sistem-InformasiRental-Mobil"
+        "repositoryLink": "https://github.com/Syahreza-Ferdian/Sistem-Informasi-Rental-Mobil"
     },
     {
         "title": "Restaurant Web App",
