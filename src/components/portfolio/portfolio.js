@@ -45,7 +45,11 @@ function Portfolio() {
                                             <h5 className="card-title fw-bold">{project.title}</h5>
                                             <p className="project-date text-info">{project.date}</p>
                                             <p className="project-desc">{project.description}</p>
-                                            <a href={project.repositoryLink} target="_blank" rel="noopener noreferrer" className="animated-link">View Repository</a>
+                                            {project.repositoryLink ? (
+                                                <a href={project.repositoryLink} target="_blank" rel="noopener noreferrer" className="animated-link">View Repository</a>
+                                            ) : (
+                                                <span className="animated-link animated-link-private">Private Repository</span>
+                                            )}
                                         </div>
                                     </div>
                                 </div>

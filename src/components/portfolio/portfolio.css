@@ -63,6 +63,9 @@
     width: 100%;
 }
 
+.animated-link-private {
+    cursor: no-drop;
+}
 
 @media(max-width:766.9px){
     .offcanvas-header {
