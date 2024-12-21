@@ -86,6 +86,9 @@ function About() {
                                             </div>
                                         </div>
                                     </div>
+
+                                    <br />
+                                    <hr />
                                 </div>
                             </div>
                         </div>
