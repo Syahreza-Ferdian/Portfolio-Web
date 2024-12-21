@@ -7,6 +7,7 @@ import Portfolio from './components/portfolio/portfolio.js';
 import Contact from './components/contact_me/contact.js';
 import { InfinitySpin } from 'react-loader-spinner';
 import './App.css'; 
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
     const [loading, setLoading] = useState(true);
