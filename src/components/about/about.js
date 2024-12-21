@@ -93,7 +93,7 @@ function About() {
 
                     <h4 class="offcanvas-title text-center fw-bold mt-5" id="offcanvasAboutLabel">Skills</h4>
 
-                    <div class="row justify-content-center mt-5 mx-5">
+                    <div class="skill-container row justify-content-center mt-5 mx-1">
                         <div class="col-12 col-md-6 mb-4">
                             <div class="card text-bg-dark px-3 py-2 rounded-4">
                                 <div class="d-flex">
