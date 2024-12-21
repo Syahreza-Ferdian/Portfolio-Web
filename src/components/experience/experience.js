@@ -50,7 +50,7 @@ function Experience() {
                         </div>
 
                         <h5 class="fw-bold mt-5 mb-4">My CV</h5>
-                        <object data={MyCV} width="100%" height="600px" type="application/pdf">
+                        <object data={MyCV} width="100%" height="800px" type="application/pdf">
                             <p>Your browser doesn't support PDFs. Please download the PDF to view it: <a href={MyCV}>Download PDF</a>.</p>
                         </object>
                     </div>
