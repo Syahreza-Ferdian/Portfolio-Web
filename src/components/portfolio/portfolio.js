@@ -42,7 +42,7 @@ function Portfolio() {
                                 <div className="col-12 col-md-6 col-lg-4 mb-4" key={index}>
                                     <div className="card h-100 text-bg-dark">
                                         <div className="card-body">
-                                            <h5 className="card-title">{project.title}</h5>
+                                            <h5 className="card-title fw-bold">{project.title}</h5>
                                             <p className="project-date text-info">{project.date}</p>
                                             <p className="project-desc">{project.description}</p>
                                             <a href={project.repositoryLink} target="_blank" rel="noopener noreferrer" className="animated-link">View Repository</a>
