@@ -1,0 +1,79 @@
+#offcanvas-portfolio {
+    background-color: #101010;
+}
+
+.offcanvas-header {
+    padding: 2rem 5rem !important;
+}
+
+.btn-close {
+    font-size: 25px !important;
+}
+
+/* .portfolio-image {
+    width: 100%;
+} */
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #f8f9fa;
+    border: 2px solid #007bff;
+}
+
+.portfolio-image img {
+    width: 650px;
+    height: auto;
+}
+
+.portfolio-header-desc {
+    text-align: justify;
+}
+
+.animated-link {
+    position: relative;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.animated-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease-in-out;
+}
+
+.animated-link:hover {
+    color: #0056b3;
+}
+
+.animated-link:hover::after {
+    width: 100%;
+}
+
+
+@media(max-width:766.9px){
+    .offcanvas-header {
+        padding: 2rem 2rem !important;
+    }
+
+    .portfolio-image img {
+        width: 100%;
+    }
+
+    .portfolio-header-desc {
+        margin-top: 1rem;
+    }
+}
