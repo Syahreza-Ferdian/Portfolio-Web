@@ -74,8 +74,8 @@ function Contact() {
                     <div className="container my-5">
                         <div className="row">
                             <div className="col-md-6 mb-4">
-                                <div className="card-contact p-4">
-                                    <h2>Message Me</h2>
+                                <div className="card-contact p-4" data-bs-theme="dark">
+                                    <h2 className="mb-4">Message Me</h2>
                                     <form onSubmit={handleSubmit}>
                                         <div className="mb-3">
                                             <label htmlFor="name" className="form-label">Name</label>
@@ -98,7 +98,7 @@ function Contact() {
                             </div>
 
                             <div className="col-md-6 mb-4">
-                                <div className="card-contact p-4 text-bg-dark rounded-4">
+                                <div className="card-contact p-4 rounded-4 bg-dark" data-bs-theme="dark">
                                     <h2>Contact Info</h2>
                                     <p>Always available for freelance work if the right project comes along, feel free to contact me!</p>
                                     <p><strong>Name:</strong> Syahreza Fisti Ferdian</p>
