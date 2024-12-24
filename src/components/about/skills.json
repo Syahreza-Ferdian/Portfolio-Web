@@ -1,0 +1,66 @@
+[
+    {
+        "title": "Back End Web Development",
+        "description": "I have extensive experience in building robust and scalable back-end solutions using technologies like Laravel, Golang, and PHP. I am proficient in developing RESTful APIs, designing efficient database schemas, and optimizing server-side performance. My expertise also includes working with SQL databases, ensuring secure and high-performing systems.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg",
+        "techStack": [
+            "Golang",
+            "PHP",
+            "Laravel",
+            "MySQL",
+            "PostgreSQL",
+            "Docker",
+            "Postman"
+        ]
+    },
+    {
+        "title": "Front End Web Development",
+        "description": "I have developed a wide range of web applications, utilizing core front-end technologies such as HTML, CSS, and JavaScript to build responsive and interactive user interfaces. I am proficient in using modern front-end frameworks like React.js and Vue.js to create dynamic, component-based applications that are both efficient and maintainable.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+        "techStack": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React JS",
+            "Vue JS"
+        ]
+    },
+    {
+        "title": "Mobile App Development",
+        "description": "I have experience in developing mobile applications using Java and Android Studio. I specialize in building native Android apps that provide a seamless and optimized user experience. My expertise includes creating apps for various domains, such as e-commerce, education, and healthcare.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg",
+        "techStack": [
+            "Java",
+            "Android Studio",
+            "SQLite",
+            "Firebase"
+        ]
+    },
+    {
+        "title": "Machine Learning",
+        "description": "I have experience in developing machine learning models and integrating them into functional applications. My expertise includes building and deploying predictive models, working with imbalanced datasets, and creating user-friendly interfaces to make AI accessible. I specialize in projects involving image classification, data preprocessing, and end-to-end ML application deployment.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg",
+        "techStack": [
+            "Python",
+            "Keras",
+            "TensorFlow",
+            "Flask",
+            "NumPy"
+        ]
+    },
+    {
+        "title": "GTA San Andreas Multiplayer Gamemode Development",
+        "description": "I have experience in developing custom game modes for Grand Theft Auto: San Andreas Multiplayer (SA-MP), focusing on creating unique and engaging game modes that offer players a fun and immersive experience. My expertise includes scripting custom features, optimizing server performance, managing player interactions within the game environment, and work with various plugins and tools to enhance the gameplay",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+        "techStack": [
+            "Pawn",
+            "C++",
+            "SA-MP Standard Library",
+            "ZCMD",
+            "MySQL",
+            "Streamer Plugin",
+            "MDialog Plugin",
+            "Sampctl Plugin"
+        ]
+    }
+]
