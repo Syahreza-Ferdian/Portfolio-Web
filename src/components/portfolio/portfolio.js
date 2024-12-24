@@ -5,10 +5,20 @@ import projectsData from './projects.json';
 
 function Portfolio() {
     const [projects, setProjects] = useState([]);
+    const [sortOrder, setSortOrder] = useState("oldest");
 
     useEffect(() => {
-        setProjects(projectsData);
-    }, []);
+        sortProjects(sortOrder);
+    }, [sortOrder]);
+
+    const sortProjects = (order) => {
+        const sortedProjects = [...projectsData].sort((a, b) => {
+            const dateA = new Date(a.date.split(" - ")[0]);
+            const dateB = new Date(b.date.split(" - ")[0]);
+            return order === "newest" ? dateB - dateA : dateA - dateB;
+        });
+        setProjects(sortedProjects);
+    };
 
     return (
         <>
@@ -34,13 +44,29 @@ function Portfolio() {
                         <hr />
                     </div>
 
-
                     <div className="container mt-5">
                         <h3 className="fw-bold mb-4">My Projects</h3>
+                        <div className="row mb-3 justify-content-end align-items-center">
+                            <label htmlFor="sortOrder" className="col-auto col-form-label text-end">
+                                Sorted by
+                            </label>
+                            <div className="col-auto">
+                                <select
+                                    className="form-select w-auto" data-bs-theme="dark"
+                                    id="sortOrder"
+                                    value={sortOrder}
+                                    onChange={(e) => setSortOrder(e.target.value)}
+                                >
+                                    <option value="newest">Newest to Oldest</option>
+                                    <option value="oldest">Oldest to Newest</option>
+                                </select>
+                            </div>
+                        </div>
+
                         <div className="row">
                             {projects.map((project, index) => (
                                 <div className="col-12 col-md-6 col-lg-4 mb-4" key={index}>
-                                    <div className="card h-100 text-bg-dark">
+                                    <div className="card h-100" data-bs-theme="dark">
                                         <div className="card-body">
                                             <h5 className="card-title fw-bold">{project.title}</h5>
                                             <p className="project-date text-info">{project.date}</p>
