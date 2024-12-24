@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-md navbar-dark bg-transparent">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">Syahreza</a>
+                <a className="navbar-brand" href="/">Syahreza</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -16,13 +16,13 @@ function Navbar() {
                             <button className="nav-link" id="#about" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-about" aria-controls="offcanvasBottom">About</button>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" id="#experience" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-experience" aria-controls="offcanvasBottom">Experience</a>
+                            <button className="nav-link" id="#experience" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-experience" aria-controls="offcanvasBottom">Experience</button>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#portfolio" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-portfolio" aria-controls="offcanvasBottom">Portfolio</a>
+                            <button className="nav-link" id="#portfolio" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-portfolio" aria-controls="offcanvasBottom">Portfolio</button>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#contact" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-contact" aria-controls="offcanvasBottom">Contact</a>
+                            <button className="nav-link" id="#contact" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-contact" aria-controls="offcanvasBottom">Contact</button>
                         </li>
                     </ul>
                 </div>
