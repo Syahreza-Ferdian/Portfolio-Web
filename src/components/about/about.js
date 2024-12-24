@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import '../about/about.css';
 import my from '../../assets/IMG_4473.jpg';
 import githubIcon from '../../assets/github.svg';
+import SkillCard from "./skillcard";
+import skillsData from "./skills.json";
 
 function About() {
+    const [skills, setSkills] = useState([]);
+
+    useEffect(() => {
+        setSkills(skillsData);
+    }, []);
 
     return (
         <>
@@ -97,55 +104,15 @@ function About() {
                     <h4 class="offcanvas-title text-center fw-bold mt-5" id="offcanvasAboutLabel">Skills</h4>
 
                     <div class="skill-container row justify-content-center mt-5 mx-1">
-                        <div class="col-12 col-md-6 mb-4">
-                            <div class="card text-bg-dark px-3 py-2 rounded-4">
-                                <div class="d-flex">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="skill-card-icon" alt="React icon" />
-
-                                    <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title fw-bold fs-4 mb-3">Front End Web Development</h5>
-                                        <p class="card-text lh-base" style={{ textAlign: "justify" }}>
-                                            I have developed a wide range of web applications, utilizing core front-end technologies such as HTML, CSS, and JavaScript to build responsive and interactive user interfaces. I am proficient in using modern front-end frameworks like React.js and Vue.js to create dynamic, component-based applications that are both efficient and maintainable.
-                                        </p>
-
-                                        <div class="d-flex flex-wrap">
-                                            <span class="me-2">Tech Stack: </span>
-                                            <span class="badge rounded-pill bg-info me-2" style={{ fontFamily: 'monospace', fontSize: "12px" }}>HTML</span>
-                                            <span class="badge rounded-pill bg-info me-2" style={{ fontFamily: 'monospace', fontSize: "12px" }}>CSS</span>
-                                            <span class="badge rounded-pill bg-info me-2" style={{ fontFamily: 'monospace', fontSize: "12px" }}>JavaScript</span>
-                                            <span class="badge rounded-pill bg-info me-2" style={{ fontFamily: 'monospace', fontSize: "12px" }}>React JS</span>
-                                            <span class="badge rounded-pill bg-info me-2" style={{ fontFamily: 'monospace', fontSize: "12px" }}>Vue JS</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 mb-4">
-                            <div class="card text-bg-dark px-3 py-2 rounded-4">
-                                <div class="d-flex">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" class="skill-card-icon" alt="Golang icon" />
-
-                                    <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title fw-bold fs-4 mb-3">Back End Web Development</h5>
-                                        <p class="card-text lh-base" style={{ textAlign: "justify" }}>
-                                            I have extensive experience in building robust and scalable back-end solutions using technologies like Laravel, Golang, and PHP. I am proficient in developing RESTful APIs, designing efficient database schemas, and optimizing server-side performance. My expertise also includes working with SQL databases, ensuring secure and high-performing systems. I am well-versed in applying best practices for back-end development, including writing clean, maintainable code and performing comprehensive testing. My focus is on creating seamless, reliable, and scalable solutions that meet the needs of modern web applications.
-                                        </p>
-
-                                        <div class="d-flex flex-wrap">
-                                            <span class="me-2">Tech Stack: </span>
-                                            <span class="badge rounded-pill bg-info me-2" style={{ fontFamily: 'monospace', fontSize: "12px" }}>Golang</span>
-                                            <span class="badge rounded-pill bg-info me-2" style={{ fontFamily: 'monospace', fontSize: "12px" }}>PHP</span>
-                                            <span class="badge rounded-pill bg-info me-2" style={{ fontFamily: 'monospace', fontSize: "12px" }}>Laravel</span>
-                                            <span class="badge rounded-pill bg-info me-2" style={{ fontFamily: 'monospace', fontSize: "12px" }}>MySQL</span>
-                                            <span class="badge rounded-pill bg-info me-2" style={{ fontFamily: 'monospace', fontSize: "12px" }}>PostgreSQL</span>
-                                            <span class="badge rounded-pill bg-info me-2" style={{ fontFamily: 'monospace', fontSize: "12px" }}>Docker</span>
-                                            <span class="badge rounded-pill bg-info me-2" style={{ fontFamily: 'monospace', fontSize: "12px" }}>Postman</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {skills.map((skill, index) => (
+                            <SkillCard
+                                key={index}
+                                title={skill.title}
+                                description={skill.description}
+                                icon={skill.icon}
+                                techStack={skill.techStack}
+                            />
+                        ))}
                     </div>
 
                 </div>
