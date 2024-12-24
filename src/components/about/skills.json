@@ -27,7 +27,7 @@
     },
     {
         "title": "Mobile App Development",
-        "description": "I have experience in developing mobile applications using Java and Android Studio. I specialize in building native Android apps that provide a seamless and optimized user experience. My expertise includes creating apps for various domains, such as e-commerce, education, and healthcare.",
+        "description": "I have experience in developing mobile applications using Java and Android Studio. I specialize in building native Android apps that provide a seamless and optimized user experience. My expertise includes integrating APIs, working with SQLite databases, and implementing Firebase services to enhance app functionality and performance. I am also good in designing user-friendly interfaces and ensuring app compatibility across different devices and screen sizes.",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg",
         "techStack": [
             "Java",
