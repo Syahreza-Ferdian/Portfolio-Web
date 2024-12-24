@@ -9,17 +9,34 @@ import { InfinitySpin } from 'react-loader-spinner';
 import './App.css'; 
 
 function App() {
-    const [loading, setLoading] = useState(true);
+    const [minimumTimeElapsed, setMinimumTimeElapsed] = useState(false);
+    const [pageReady, setPageReady] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => {
-            setLoading(false);
+        const timer = setTimeout(() => {
+            setMinimumTimeElapsed(true);
         }, 1500);
+
+        return () => clearTimeout(timer);
     }, []);
+
+    useEffect(() => {
+        const checkPageReady = () => {
+            if (document.readyState === 'complete') {
+                setPageReady(true);
+            }
+        };
+
+        window.addEventListener('load', checkPageReady);
+
+        return () => window.removeEventListener('load', checkPageReady);
+    }, []);
+
+    const showLoader = !minimumTimeElapsed || !pageReady;
 
     return (
         <>
-            {loading ? (
+            {showLoader ? (
                 <div className="loader-container">
                     <InfinitySpin
                         visible={true}
