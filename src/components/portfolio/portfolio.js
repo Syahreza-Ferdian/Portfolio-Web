@@ -77,6 +77,19 @@ function Portfolio() {
                                                 <span className="animated-link animated-link-private">Private Repository</span>
                                             )}
                                         </div>
+
+                                        <div className="card-footer d-flex flex-wrap">
+                                            <span className="me-2">Tech Stack: </span>
+                                            {project.techStack.map((tech, index) => (
+                                                <span
+                                                    key={index}
+                                                    className="badge rounded-pill bg-body-secondary me-2"
+                                                    style={{ fontFamily: "monospace", fontSize: "12px" }}
+                                                >
+                                                    {tech}
+                                                </span>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
                             ))}
