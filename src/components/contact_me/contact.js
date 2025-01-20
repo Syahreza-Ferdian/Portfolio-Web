@@ -64,7 +64,7 @@ function Contact() {
 
     return (
         <>
-            <div className="offcanvas offcanvas-bottom vh-100" tabindex="-1" id="offcanvas-contact" aria-labelledby="offcanvasContactLabel">
+            <div className="offcanvas offcanvas-bottom vh-100" tabIndex="-1" id="offcanvas-contact" aria-labelledby="offcanvasContactLabel">
                 <div className="offcanvas-header flex-row-reverse">
                     <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
