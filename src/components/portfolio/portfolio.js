@@ -6,17 +6,41 @@ import projectsData from './projects.json';
 function Portfolio() {
     const [projects, setProjects] = useState([]);
     const [sortOrder, setSortOrder] = useState("oldest");
+    const [filterProject, setFilterProject] = useState("All");
+
+    const filterParam = [
+        { param: "All", display: "All" },
+        { param: "Golang", display: "Golang" },
+        { param: "Laravel", display: "Laravel" },
+        { param: "Java", display: "Java" },
+        { param: ["PHP Native", "Laravel"], display: "PHP" }
+    ]
 
     useEffect(() => {
-        sortProjects(sortOrder);
-    }, [sortOrder]);
+        processSortAndFilter();
+    }, [sortOrder, filterProject]);
 
-    const sortProjects = (order) => {
-        const sortedProjects = [...projectsData].sort((a, b) => {
+    const processSortAndFilter = () => {
+        let filteredProjects = [...projectsData];
+        
+        if (filterProject !== "All") {
+            if (Array.isArray(filterProject)) {
+                filteredProjects = filteredProjects.filter((project) =>
+                    filterProject.some((tech) => project.techStack.includes(tech))
+                );
+            } else {
+                filteredProjects = filteredProjects.filter((project) =>
+                    project.techStack.includes(filterProject)
+                );
+            }
+        }
+
+        const sortedProjects = filteredProjects.sort((a, b) => {
             const dateA = new Date(a.date.split(" - ")[0]);
             const dateB = new Date(b.date.split(" - ")[0]);
-            return order === "newest" ? dateB - dateA : dateA - dateB;
+            return sortOrder === "newest" ? dateB - dateA : dateA - dateB;
         });
+
         setProjects(sortedProjects);
     };
 
@@ -46,20 +70,41 @@ function Portfolio() {
 
                     <div className="container mt-5">
                         <h3 className="fw-bold mb-4">My Projects</h3>
-                        <div className="row mb-3 justify-content-end align-items-center">
-                            <label htmlFor="sortOrder" className="col-auto col-form-label text-end">
-                                Sorted by
-                            </label>
-                            <div className="col-auto">
-                                <select
-                                    className="form-select w-auto" data-bs-theme="dark"
-                                    id="sortOrder"
-                                    value={sortOrder}
-                                    onChange={(e) => setSortOrder(e.target.value)}
-                                >
-                                    <option value="newest">Newest to Oldest</option>
-                                    <option value="oldest">Oldest to Newest</option>
-                                </select>
+                        <div className="col mb-3 sort-filter-option">
+                            <div className="row justify-content-md-end">
+                                <div className="col-auto">
+                                    <label htmlFor="sortOrder" className="form-label">
+                                        Sorted by
+                                    </label>
+                                    <select
+                                        className="form-select w-auto"
+                                        data-bs-theme="dark"
+                                        id="sortOrder"
+                                        value={sortOrder}
+                                        onChange={(e) => setSortOrder(e.target.value)}
+                                    >
+                                        <option value="newest">Newest to Oldest</option>
+                                        <option value="oldest">Oldest to Newest</option>
+                                    </select>
+                                </div>
+                                <div className="col-auto">
+                                    <label htmlFor="filter" className="form-label">
+                                        Filter
+                                    </label>
+                                    <select
+                                        className="form-select w-auto"
+                                        data-bs-theme="dark"
+                                        id="filter"
+                                        value={JSON.stringify(filterProject)}
+                                        onChange={(e) => setFilterProject(JSON.parse(e.target.value))}
+                                    >
+                                        {filterParam.map((param, index) => (
+                                            <option key={index} value={JSON.stringify(param.param)}>
+                                                {param.display}
+                                            </option>
+                                        ))}
+                                    </select>
+                                </div>
                             </div>
                         </div>
 
