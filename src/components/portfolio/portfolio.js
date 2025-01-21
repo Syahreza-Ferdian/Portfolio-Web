@@ -22,7 +22,7 @@ function Portfolio() {
 
     const processSortAndFilter = () => {
         let filteredProjects = [...projectsData];
-        
+
         if (filterProject !== "All") {
             if (Array.isArray(filterProject)) {
                 filteredProjects = filteredProjects.filter((project) =>
@@ -123,12 +123,12 @@ function Portfolio() {
                                             )}
                                         </div>
 
-                                        <div className="card-footer d-flex flex-wrap">
+                                        <div className="card-footer d-flex flex-wrap gap-2">
                                             <span className="me-2">Tech Stack: </span>
                                             {project.techStack.map((tech, index) => (
                                                 <span
                                                     key={index}
-                                                    className="badge rounded-pill bg-body-secondary me-2"
+                                                    className="badge rounded-pill bg-body-secondary"
                                                     style={{ fontFamily: "monospace", fontSize: "12px" }}
                                                 >
                                                     {tech}
