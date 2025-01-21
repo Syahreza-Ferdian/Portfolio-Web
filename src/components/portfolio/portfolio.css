@@ -78,4 +78,8 @@
     .portfolio-header-desc {
         margin-top: 1rem;
     }
+
+    .sort-filter-option .row div:nth-child(2) {
+        margin-left: 2.34rem;
+    }
 }
