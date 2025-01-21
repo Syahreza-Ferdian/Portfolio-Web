@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import './portfolio.css';
 import portfolioIlustration from '../../assets/undraw_programming_65t2.svg';
 import projectsData from './projects.json';
+import ProjectCard from "./projectcard";
 
 function Portfolio() {
     const [projects, setProjects] = useState([]);
@@ -110,33 +111,14 @@ function Portfolio() {
 
                         <div className="row">
                             {projects.map((project, index) => (
-                                <div className="col-12 col-md-6 col-lg-4 mb-4" key={index}>
-                                    <div className="card h-100" data-bs-theme="dark">
-                                        <div className="card-body">
-                                            <h5 className="card-title fw-bold">{project.title}</h5>
-                                            <p className="project-date text-info">{project.date}</p>
-                                            <p className="project-desc">{project.description}</p>
-                                            {project.repositoryLink ? (
-                                                <a href={project.repositoryLink} target="_blank" rel="noopener noreferrer" className="animated-link">View Repository</a>
-                                            ) : (
-                                                <span className="animated-link animated-link-private">Private Repository</span>
-                                            )}
-                                        </div>
-
-                                        <div className="card-footer d-flex flex-wrap gap-2">
-                                            <span className="me-2">Tech Stack: </span>
-                                            {project.techStack.map((tech, index) => (
-                                                <span
-                                                    key={index}
-                                                    className="badge rounded-pill bg-body-secondary"
-                                                    style={{ fontFamily: "monospace", fontSize: "12px" }}
-                                                >
-                                                    {tech}
-                                                </span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </div>
+                                <ProjectCard 
+                                    key={index}
+                                    title={project.title}
+                                    date={project.date}
+                                    description={project.description}
+                                    repositoryLink={project.repositoryLink}
+                                    techStack={project.techStack}
+                                />
                             ))}
                         </div>
                     </div>
