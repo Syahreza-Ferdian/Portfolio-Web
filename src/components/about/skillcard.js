@@ -11,12 +11,12 @@ function SkillCard({ title, description, icon, techStack }) {
                         <p className="card-text lh-base" style={{ textAlign: "justify" }}>
                             {description}
                         </p>
-                        <div className="d-flex flex-wrap">
+                        <div className="d-flex flex-wrap gap-2">
                             <span className="me-2">Tech Stack: </span>
                             {techStack.map((tech, index) => (
                                 <span
                                     key={index}
-                                    className="badge rounded-pill bg-info me-2"
+                                    className="badge rounded-pill bg-info"
                                     style={{ fontFamily: "monospace", fontSize: "12px" }}
                                 >
                                     {tech}
