@@ -17,36 +17,19 @@
         "title": "Front End Web Development",
         "description": "I have developed a wide range of web applications, utilizing core front-end technologies such as HTML, CSS, and JavaScript to build responsive and interactive user interfaces. I am proficient in using modern front-end frameworks like React.js and Vue.js to create dynamic, component-based applications that are both efficient and maintainable.",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-        "techStack": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "React JS",
-            "Vue JS"
-        ]
+        "techStack": ["HTML", "CSS", "JavaScript", "React JS", "Vue JS"]
     },
     {
         "title": "Mobile App Development",
         "description": "I have experience in developing mobile applications using Java and Android Studio. I specialize in building native Android apps that provide a seamless and optimized user experience. My expertise includes integrating APIs, working with SQLite databases, and implementing Firebase services to enhance app functionality and performance. I am also good in designing user-friendly interfaces and ensuring app compatibility across different devices and screen sizes.",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg",
-        "techStack": [
-            "Java",
-            "Android Studio",
-            "SQLite",
-            "Firebase"
-        ]
+        "techStack": ["Java", "Android Studio", "SQLite", "Firebase"]
     },
     {
         "title": "Machine Learning",
         "description": "I have experience in developing machine learning models and integrating them into functional applications. My expertise includes building and deploying predictive models, working with imbalanced datasets, and creating user-friendly interfaces to make AI accessible. I specialize in projects involving image classification, data preprocessing, and end-to-end ML application deployment.",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg",
-        "techStack": [
-            "Python",
-            "Keras",
-            "TensorFlow",
-            "Flask",
-            "NumPy"
-        ]
+        "techStack": ["Python", "Keras", "TensorFlow", "Flask", "NumPy"]
     },
     {
         "title": "GTA San Andreas Multiplayer Gamemode Development",

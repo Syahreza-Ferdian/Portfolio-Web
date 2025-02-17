@@ -4,63 +4,42 @@
         "date": "Mar 2023 - Apr 2023 (Discontinue)",
         "description": "Designed and implemented a freeroam gamemode with functional features and server-side configuration. Developed using PAWN scripting language for the SA-MP platform. The gamemode includes features such as vehicle spawning, player commands, weapon spawning, player teleport, vehicle customization, and more.",
         "repositoryLink": "https://github.com/Syahreza-Ferdian/GTA-SAMP-Simple-Freeroam-Gamemode",
-        "techStack": [
-            "Pawn Programming",
-            "SA-MP"
-        ]
+        "techStack": ["Pawn Programming", "SA-MP"]
     },
     {
         "title": "Car Rent Web App",
         "date": "Oct 2023 - Dec 2023",
         "description": "Developed front-end and back-end for a car rental information system as a database programming final project. Developed using PHP native and MySQL database.",
         "repositoryLink": "https://github.com/Syahreza-Ferdian/Sistem-Informasi-Rental-Mobil",
-        "techStack": [
-            "PHP Native",
-            "MySQL Database"
-        ]
+        "techStack": ["PHP Native", "MySQL Database"]
     },
     {
         "title": "Restaurant Web App",
         "date": "Nov 2023 - Dec 2023",
         "description": "Created menu display, search, and filter features for a restaurant ordering system using Laravel.",
         "repositoryLink": "https://github.com/Syahreza-Ferdian/Project-Akhir-PAW",
-        "techStack": [
-            "Laravel",
-            "MySQL Database"
-        ]
+        "techStack": ["Laravel", "MySQL Database"]
     },
     {
         "title": "Bansos House Eligibility Prediction",
         "date": "Nov 2024 - Dec 2024",
         "description": "This project aims to predict the eligibility of houses for social assistance (Bansos) based on images of their exteriors. Using a Convolutional Neural Network (CNN) model, the system classifies houses as either 'Eligible' or 'Not Eligible' for receiving social assistance. The model was trained on a dataset of house images labeled by eligibility status. The project was developed using Python and TensorFlow.",
         "repositoryLink": "https://github.com/Syahreza-Ferdian/Bansos-Eligibility-Prediction",
-        "techStack": [
-            "Python",
-            "TensorFlow",
-            "CNN"
-        ]
+        "techStack": ["Python", "TensorFlow", "CNN"]
     },
     {
         "title": "Heal-in (REST API)",
         "date": "Feb 2024 - Mar 2024",
         "description": "Building fully functional RESTful API for app functionality and integration with MidTrans as Payment Gateway. Built using Golang.",
         "repositoryLink": "https://github.com/Syahreza-Ferdian/heal-in",
-        "techStack": [
-            "Golang",
-            "Gin",
-            "Gorm",
-            "MySQL Database"
-        ]
+        "techStack": ["Golang", "Gin", "Gorm", "MySQL Database"]
     },
     {
         "title": "Restologi (Mobile App)",
         "date": "Apr 2024 - Jun 2024",
         "description": "Design and build mobile app for food ordering on restaurant. Responsible for implementing payment and download feature. Design and build backend service for handling payment request and transaction.",
         "repositoryLink": "https://github.com/Syahreza-Ferdian/Restologi",
-        "techStack":[
-            "Java",
-            "Golang"
-        ]
+        "techStack": ["Java", "Golang"]
     },
     {
         "title": "Computy-AI Backend Service (REST API)",
@@ -81,52 +60,34 @@
         "date": "Dec 2024 - Now",
         "description": "Design and develop REST API using Laravel to manage business functionality for a car rental platform. Implement robust admin and user functionalities, including vehicle management, reservation handling, and real-time data retrieval by category or status. Optimize system performance and security with middleware, validation, and role-based access control.",
         "repositoryLink": "https://github.com/Syahreza-Ferdian/M-M-Rental-Backend",
-        "techStack": [
-            "Laravel",
-            "MySQL Database"
-        ]
+        "techStack": ["Laravel", "MySQL Database"]
     },
     {
         "title": "Smart Lamp IoT System Using Blynk and ESP32",
         "date": "May 2024 - May 2024",
         "description": "Developed an IoT system that allows users to control a lamp remotely using the Blynk app. The system uses an ESP32 microcontroller to connect the lamp to the internet and receive commands from the Blynk app. I also integrated a light sensor and motion sensor to automate the lamp's operation based on ambient light levels and motion detection.",
         "repositoryLink": "https://github.com/Syahreza-Ferdian/IoT-Project",
-        "techStack": [
-            "Arduino IDE",
-            "C++",
-            "Blynk",
-            "ESP32"
-        ]
+        "techStack": ["Arduino IDE", "C++", "Blynk", "ESP32"]
     },
     {
         "title": "Hungarian Algorithm Implementation in Java",
         "date": "June 2023 - July 2023",
         "description": "Implemented the Hungarian Algorithm in Java to solve the assignment problem. The algorithm finds the optimal assignment of tasks to workers based on the cost of each assignment. The implementation includes a step-by-step explanation of the algorithm and a demonstration of its application to a sample problem.",
         "repositoryLink": "https://github.com/Syahreza-Ferdian/Hungarian-Algorithm-Java",
-        "techStack": [
-            "Java"
-        ]
+        "techStack": ["Java"]
     },
     {
         "title": "Corner Sense",
         "date": "Nov 2023 - Dec 2023",
         "description": "Design and develop Java code implementation for a gaming center on my faculty. Our team designed a simple app called 'Corner Sense' to facilitate students in finding and booking gaming spots in the gaming center. The app allows users to view available spots, book a spot, and receive notifications when their booking is confirmed. The app also includes a feature to view the specifications of each gaming spot, such as the type of console available and the games installed.",
         "repositoryLink": "https://github.com/Syahreza-Ferdian/Corner-Sense",
-        "techStack": [
-            "Java"
-        ]
+        "techStack": ["Java"]
     },
     {
         "title": "Portfolio Website",
         "date": "Nov 2024 - Now",
         "description": "It is this website that you are currently viewing. I designed and developed this portfolio website to showcase my projects, skills, and experience. The website is built using React JS framework with a responsive design that adapts to different screen sizes. I also integrated a 'Contact Me' form that integrated into my email service to receive message from visitors.",
         "repositoryLink": "https://github.com/Syahreza-Ferdian/Portfolio-Web",
-        "techStack": [
-            "React JS",
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Bootstrap"
-        ]
+        "techStack": ["React JS", "JavaScript", "HTML", "CSS", "Bootstrap"]
     }
 ]

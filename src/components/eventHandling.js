@@ -3,16 +3,15 @@ import { useEffect } from "react";
 function EventHanding() {
     useEffect(() => {
         function handleFocus() {
-            document.title = 'My Portfolio | Syahreza';
+            document.title = "My Portfolio | Syahreza";
         }
 
         // function handleBlur() {
         //     document.title = 'Come back :(';
         // }
 
-        window.addEventListener('focus', handleFocus);
+        window.addEventListener("focus", handleFocus);
         // window.addEventListener('blur', handleBlur);
-
     });
 
     return null;

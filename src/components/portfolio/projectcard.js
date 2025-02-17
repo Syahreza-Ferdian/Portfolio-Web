@@ -9,9 +9,18 @@ function ProjectCard({ title, date, description, repositoryLink, techStack }) {
                     <p className="project-date text-info">{date}</p>
                     <p className="project-desc">{description}</p>
                     {repositoryLink ? (
-                        <a href={repositoryLink} target="_blank" rel="noopener noreferrer" className="animated-link">View Repository</a>
+                        <a
+                            href={repositoryLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="animated-link"
+                        >
+                            View Repository
+                        </a>
                     ) : (
-                        <span className="animated-link animated-link-private">Private Repository</span>
+                        <span className="animated-link animated-link-private">
+                            Private Repository
+                        </span>
                     )}
                 </div>
 
@@ -21,7 +30,10 @@ function ProjectCard({ title, date, description, repositoryLink, techStack }) {
                         <span
                             key={index}
                             className="badge rounded-pill bg-body-secondary"
-                            style={{ fontFamily: "monospace", fontSize: "12px" }}
+                            style={{
+                                fontFamily: "monospace",
+                                fontSize: "12px",
+                            }}
                         >
                             {tech}
                         </span>
