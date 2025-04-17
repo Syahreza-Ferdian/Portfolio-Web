@@ -20,6 +20,20 @@
         "techStack": ["HTML", "CSS", "JavaScript", "React JS", "Vue JS"]
     },
     {
+        "title": "Full Stack Web Development",
+        "description": "I have a strong foundation in both front-end and back-end development, allowing me to build complete web applications from scratch. My expertise includes working with various technologies such as React.js, Vue.js, Laravel, and Typescript. I am skilled in implementing responsive user interfaces from design, developing RESTful APIs, and managing databases to deliver seamless user experiences.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+        "techStack": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React JS",
+            "Vue JS",
+            "Laravel",
+            "Typescript"
+        ]
+    },
+    {
         "title": "Mobile App Development",
         "description": "I have experience in developing mobile applications using Java and Android Studio. I specialize in building native Android apps that provide a seamless and optimized user experience. My expertise includes integrating APIs, working with SQLite databases, and implementing Firebase services to enhance app functionality and performance. I am also good in designing user-friendly interfaces and ensuring app compatibility across different devices and screen sizes.",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg",
