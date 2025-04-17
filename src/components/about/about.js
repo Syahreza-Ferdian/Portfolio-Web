@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../about/about.css";
 import my from "../../assets/IMG_4473.jpg";
 import githubIcon from "../../assets/github.svg";
+import gitlabIcon from "../../assets/gitlab-svgrepo-com.svg";
 import SkillCard from "./skillcard";
 import skillsData from "./skills.json";
 
@@ -167,6 +168,20 @@ function About() {
                                                     <img
                                                         src={githubIcon}
                                                         alt="github_syahreza"
+                                                        height="30"
+                                                        width="40"
+                                                    />
+                                                </a>
+                                            </div>
+
+                                            <div className="me-2">
+                                                <a
+                                                    href="https://gitlab.com/syahrezaferdian"
+                                                    target="blank"
+                                                >
+                                                    <img
+                                                        src={gitlabIcon}
+                                                        alt="gitlab_syahreza"
                                                         height="30"
                                                         width="40"
                                                     />
