@@ -19,6 +19,7 @@ function Portfolio() {
 
     useEffect(() => {
         processSortAndFilter();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [sortOrder, filterProject]);
 
     const processSortAndFilter = () => {
