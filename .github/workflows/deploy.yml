@@ -1,4 +1,4 @@
-name: Deploy ke Azure VM
+name: Deploy to Azure VM
 
 on:
     push:
@@ -21,10 +21,10 @@ jobs:
               run: npm run build
 
             - name: Deploy to Azure VM Via SSH
-              uses: appleboy/scp-action@master
+              uses: appleboy/scp-action@v0.1.0
               with:
                   host: ${{ secrets.VM_HOST }}
                   username: ${{ secrets.VM_USER }}
-                  key: ${{ secrets.PUB_SSH_KEY }}
+                  key: ${{ secrets.SSH_KEY }}
                   source: "build/*"
                   target: ${{ secrets.VM_TARGET }}
