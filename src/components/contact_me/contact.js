@@ -181,7 +181,7 @@ function Contact() {
                                     </p>
                                     <p>
                                         <strong>Email Me:</strong>{" "}
-                                        syahrezafistiferdian32@gmail.com
+                                        me@syahreza.site
                                     </p>
                                 </div>
                             </div>
