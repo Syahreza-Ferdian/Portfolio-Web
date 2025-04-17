@@ -79,9 +79,7 @@ function About() {
                                                 <h6 className="fw-bold">
                                                     Email
                                                 </h6>
-                                                <p>
-                                                    syahrezafistiferdian32@gmail.com
-                                                </p>
+                                                <p>me@syahreza.site</p>
                                             </div>
                                         </div>
 
