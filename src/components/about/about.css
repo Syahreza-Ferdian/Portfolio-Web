@@ -1,47 +1,49 @@
 #offcanvas-about {
-    background-color: #101010;
+  background-color: #101010;
 }
 
 .offcanvas-header {
-    padding: 2rem 5rem !important;
+  padding: 2rem 5rem !important;
 }
 
 .btn-close {
-    font-size: 25px !important;
+  font-size: 25px !important;
 }
 
 .myphoto img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
 }
 
 .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-15px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .skill-card-icon {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .card:hover .skill-card-icon {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .skill-card-icon {
-    margin-top: 1rem;
-    width: auto;
-    height: 65px;
-    object-fit: contain;
+  margin-top: 1rem;
+  width: auto;
+  height: 65px;
+  object-fit: contain;
 }
 
 @media (max-width: 766.9px) {
-    .offcanvas-header {
-        padding: 2rem 2rem !important;
-    }
+  .offcanvas-header {
+    padding: 2rem 2rem !important;
+  }
 }
