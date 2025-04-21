@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react";
-import "./portfolio.css";
-import portfolioIlustration from "../../assets/undraw_programming_65t2.svg";
-import projectsData from "./projects.json";
-import ProjectCard from "./projectcard";
+import React, { useState, useEffect } from 'react';
+import './portfolio.css';
+import portfolioIlustration from '../../assets/undraw_programming_65t2.svg';
+import projectsData from './projects.json';
+import ProjectCard from './projectcard';
 
 function Portfolio() {
   const [projects, setProjects] = useState([]);
-  const [sortOrder, setSortOrder] = useState("oldest");
-  const [filterProject, setFilterProject] = useState("All");
+  const [sortOrder, setSortOrder] = useState('oldest');
+  const [filterProject, setFilterProject] = useState('All');
 
   const filterParam = [
-    { param: "All", display: "All" },
-    { param: "Golang", display: "Golang" },
-    { param: "Laravel", display: "Laravel" },
-    { param: "Java", display: "Java" },
-    { param: ["PHP Native", "Laravel"], display: "PHP" },
+    { param: 'All', display: 'All' },
+    { param: 'Golang', display: 'Golang' },
+    { param: 'Laravel', display: 'Laravel' },
+    { param: 'Java', display: 'Java' },
+    { param: ['PHP Native', 'Laravel'], display: 'PHP' },
   ];
 
   useEffect(() => {
@@ -25,7 +25,7 @@ function Portfolio() {
   const processSortAndFilter = () => {
     let filteredProjects = [...projectsData];
 
-    if (filterProject !== "All") {
+    if (filterProject !== 'All') {
       if (Array.isArray(filterProject)) {
         filteredProjects = filteredProjects.filter((project) =>
           filterProject.some((tech) => project.techStack.includes(tech))
@@ -38,9 +38,9 @@ function Portfolio() {
     }
 
     const sortedProjects = filteredProjects.sort((a, b) => {
-      const dateA = new Date(a.date.split(" - ")[0]);
-      const dateB = new Date(b.date.split(" - ")[0]);
-      return sortOrder === "newest" ? dateB - dateA : dateA - dateB;
+      const dateA = new Date(a.date.split(' - ')[0]);
+      const dateB = new Date(b.date.split(' - ')[0]);
+      return sortOrder === 'newest' ? dateB - dateA : dateA - dateB;
     });
 
     setProjects(sortedProjects);

@@ -1,33 +1,36 @@
 name: Deploy to Azure VM
 
 on:
-    push:
-        branches:
-            - deployment
+  push:
+    branches:
+      - deployment
 
 jobs:
-    deploy:
-        runs-on: ubuntu-latest
-        environment: Production-VM
+  deploy:
+    runs-on: ubuntu-latest
+    environment: Production-VM
 
-        steps:
-            - name: Checkout Code
-              uses: actions/checkout@v2
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
 
-            - name: Install Dependencies
-              run: npm install --legacy-peer-deps
+      - name: Install Dependencies
+        run: npm install --legacy-peer-deps
 
-            - name: Generate or update Sitemap
-              run: npm run sitemap
+      - name: Run ESLint
+        run: npm run lint
 
-            - name: Build React App
-              run: npm run build
+      - name: Generate or update Sitemap
+        run: npm run sitemap
 
-            - name: Deploy to Azure VM Via SSH
-              uses: appleboy/scp-action@v0.1.0
-              with:
-                  host: ${{ secrets.VM_HOST }}
-                  username: ${{ secrets.VM_USER }}
-                  key: ${{ secrets.SSH_KEY }}
-                  source: "dist/*"
-                  target: ${{ secrets.VM_TARGET }}
+      - name: Build React App
+        run: npm run build
+
+      - name: Deploy to Azure VM Via SSH
+        uses: appleboy/scp-action@v0.1.0
+        with:
+          host: ${{ secrets.VM_HOST }}
+          username: ${{ secrets.VM_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          source: 'dist/*'
+          target: ${{ secrets.VM_TARGET }}

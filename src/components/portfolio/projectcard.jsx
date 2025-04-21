@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function ProjectCard({ title, date, description, repositoryLink, techStack }) {
   return (
@@ -31,8 +31,8 @@ function ProjectCard({ title, date, description, repositoryLink, techStack }) {
               key={index}
               className="badge rounded-pill bg-body-secondary"
               style={{
-                fontFamily: "monospace",
-                fontSize: "12px",
+                fontFamily: 'monospace',
+                fontSize: '12px',
               }}
             >
               {tech}
