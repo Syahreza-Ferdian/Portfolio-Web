@@ -1,33 +1,43 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import React, { useState, useEffect } from "react";
+import Landing from "./components/landing/landing.jsx";
+import Navbar from "./components/navbar/navbar.jsx";
+import About from "./components/about/about.jsx";
+import Experience from "./components/experience/experience.jsx";
+import Portfolio from "./components/portfolio/portfolio.jsx";
+import Contact from "./components/contact_me/contact.jsx";
+import { InfinitySpin } from "react-loader-spinner";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, []);
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {loading ? (
+        <div className="loader-container">
+          <InfinitySpin
+            visible={true}
+            width="200"
+            color="#4fa94d"
+            ariaLabel="infinity-spin-loading"
+          />
+        </div>
+      ) : (
+        <div className="main-content">
+          <Navbar />
+          <About />
+          <Landing />
+          <Experience />
+          <Portfolio />
+          <Contact />
+        </div>
+      )}
     </>
   );
 }
