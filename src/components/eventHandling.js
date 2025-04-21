@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-function EventHanding() {
+function EventHandling() {
   useEffect(() => {
     function handleFocus() {
       document.title = 'My Portfolio | Syahreza';
@@ -17,4 +17,4 @@ function EventHanding() {
   return null;
 }
 
-export default EventHanding;
+export default EventHandling;
