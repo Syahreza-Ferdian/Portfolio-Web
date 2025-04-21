@@ -1,48 +1,48 @@
 :root {
-    --navbar-color-on-hover: rgb(216, 214, 214);
+  --navbar-color-on-hover: rgb(216, 214, 214);
 }
 
-nav { 
-    margin-left: 2rem; 
-    margin-top: 1rem;
-    margin-bottom: -2rem;
-    margin-right: 2rem;
-    position: relative;
+nav {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: -2rem;
+  margin-right: 2rem;
+  position: relative;
 }
 
 ul {
-    gap: 2rem;
+  gap: 2rem;
 }
 
 .nav-link {
-    color: white !important;
+  color: white !important;
 }
 
 .nav-link:hover {
-    color: var(--navbar-color-on-hover) !important;
+  color: var(--navbar-color-on-hover) !important;
 }
 
 .nav-link::after {
-    content: '';
-    display: block;
-    padding-bottom: 0.2rem;
-    border-bottom: 0.1rem solid var(--navbar-color-on-hover);
-    transform: scaleX(0);
-    transition: 0.2s;
+  content: "";
+  display: block;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid var(--navbar-color-on-hover);
+  transform: scaleX(0);
+  transition: 0.2s;
 }
 
 .nav-link:hover::after {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
-@media(max-width:766.9px){
-    .navbar-collapse{
-        position: absolute;
-        margin-top: 1rem;
-        top: 100%;
-    }
-    .nav-link {
-        margin-bottom: -1rem;
-        padding-bottom: -2rem;
-    }
+@media (max-width: 766.9px) {
+  .navbar-collapse {
+    position: absolute;
+    margin-top: 1rem;
+    top: 100%;
+  }
+  .nav-link {
+    margin-bottom: -1rem;
+    padding-bottom: -2rem;
+  }
 }

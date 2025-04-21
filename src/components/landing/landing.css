@@ -1,46 +1,46 @@
 .landing {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
-    overflow: auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: auto;
 }
 
 .container-landing {
-    text-align: center; 
+  text-align: center;
 }
 
 .upper-text {
-    font-weight: 400;
-    margin-bottom: 1px;
-    font-size: 32px;
-    letter-spacing: 0.86px;
+  font-weight: 400;
+  margin-bottom: 1px;
+  font-size: 32px;
+  letter-spacing: 0.86px;
 }
 
 .name-text {
-    font-weight: 800;
-    font-size: 50px;
-    margin-bottom: 25px;
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 25px;
 }
 
-@media(max-width:766.9px){
-    .name-text {
-        font-size: 35px;
-    }
+@media (max-width: 766.9px) {
+  .name-text {
+    font-size: 35px;
+  }
 
-    .upper-text {
-        font-size: 19px;
-    }
+  .upper-text {
+    font-size: 19px;
+  }
 
-    .desc-land {
-        font-size: 13px;
-    }
+  .desc-land {
+    font-size: 13px;
+  }
 
-    .container-landing {
-        height: 100%;
-    }
+  .container-landing {
+    height: 100%;
+  }
 
-    .wrapper {
-        margin-top: 70%;
-    }
+  .wrapper {
+    margin-top: 70%;
+  }
 }
