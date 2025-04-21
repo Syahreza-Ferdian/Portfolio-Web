@@ -1,0 +1,3 @@
+git config --global user.name "username github"
+git config --global user.email "email github"
+git config --list

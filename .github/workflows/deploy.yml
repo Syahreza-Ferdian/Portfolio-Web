@@ -29,5 +29,5 @@ jobs:
                   host: ${{ secrets.VM_HOST }}
                   username: ${{ secrets.VM_USER }}
                   key: ${{ secrets.SSH_KEY }}
-                  source: "build/*"
+                  source: "dist/*"
                   target: ${{ secrets.VM_TARGET }}

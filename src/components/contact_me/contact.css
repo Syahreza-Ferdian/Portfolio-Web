@@ -1,25 +1,27 @@
 #offcanvas-contact {
-    background-color: #101010;
+  background-color: #101010;
 }
 
 .offcanvas-header {
-    padding: 2rem 5rem !important;
+  padding: 2rem 5rem !important;
 }
 
 .btn-close {
-    font-size: 25px !important;
+  font-size: 25px !important;
 }
 
-input::placeholder, textarea::placeholder {
-    color: #fff !important;
+input::placeholder,
+textarea::placeholder {
+  color: #fff !important;
 }
 
-input, textarea {
-    color: #fff !important;
+input,
+textarea {
+  color: #fff !important;
 }
 
-@media(max-width:766.9px){
-    .offcanvas-header {
-        padding: 2rem 2rem !important;
-    }
+@media (max-width: 766.9px) {
+  .offcanvas-header {
+    padding: 2rem 2rem !important;
+  }
 }
