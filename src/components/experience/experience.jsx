@@ -1,6 +1,6 @@
-import React from "react";
-import "./experience.css";
-import MyCV from "../../assets/MyCV.pdf";
+import React from 'react';
+import './experience.css';
+import MyCV from '../../assets/MyCV.pdf';
 
 function Experience() {
   return (

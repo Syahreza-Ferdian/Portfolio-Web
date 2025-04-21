@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import "./contact.css";
-import emailjs from "@emailjs/browser";
+import React, { useState, useEffect } from 'react';
+import './contact.css';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -11,7 +11,7 @@ function Contact() {
   }, []);
 
   useEffect(() => {
-    const savedTimer = localStorage.getItem("timer");
+    const savedTimer = localStorage.getItem('timer');
     if (savedTimer) {
       setTimer(parseInt(savedTimer));
     }
@@ -21,7 +21,7 @@ function Contact() {
       interval = setInterval(() => {
         setTimer((prevState) => {
           const newTimer = prevState - 1;
-          localStorage.setItem("timer", newTimer);
+          localStorage.setItem('timer', newTimer);
           return newTimer;
         });
       }, 1000);
@@ -33,7 +33,7 @@ function Contact() {
     e.preventDefault();
 
     if (isSubmitting || timer > 0) {
-      alert("Please wait a moment before submitting again.");
+      alert('Please wait a moment before submitting again.');
       return;
     }
 
@@ -41,19 +41,19 @@ function Contact() {
 
     setIsSubmitting(true);
     setTimer(TIMER_LIMIT);
-    localStorage.setItem("timer", TIMER_LIMIT);
+    localStorage.setItem('timer', TIMER_LIMIT);
 
     const serviceId = import.meta.env.VITE_APP_EMAIL_JS_SERVICE_ID;
     const templateId = import.meta.env.VITE_APP_EMAIL_JS_TEMPLATE_ID;
 
     try {
       await emailjs.send(serviceId, templateId, {
-        to_name: "Syahreza Fisti Ferdian",
+        to_name: 'Syahreza Fisti Ferdian',
         from_name: e.target.name.value,
         reply_to: e.target.email.value,
         message: e.target.message.value,
       });
-      alert("Email successfully sent");
+      alert('Email successfully sent');
       e.target.reset(); // Clear form after sending message
     } catch (error) {
       console.log(error);

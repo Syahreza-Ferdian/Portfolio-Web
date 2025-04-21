@@ -1,20 +1,20 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 function EventHanding() {
-    useEffect(() => {
-        function handleFocus() {
-            document.title = "My Portfolio | Syahreza";
-        }
+  useEffect(() => {
+    function handleFocus() {
+      document.title = 'My Portfolio | Syahreza';
+    }
 
-        // function handleBlur() {
-        //     document.title = 'Come back :(';
-        // }
+    // function handleBlur() {
+    //     document.title = 'Come back :(';
+    // }
 
-        window.addEventListener("focus", handleFocus);
-        // window.addEventListener('blur', handleBlur);
-    });
+    window.addEventListener('focus', handleFocus);
+    // window.addEventListener('blur', handleBlur);
+  });
 
-    return null;
+  return null;
 }
 
 export default EventHanding;

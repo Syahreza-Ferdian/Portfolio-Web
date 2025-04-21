@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
-import Landing from "./components/landing/landing.jsx";
-import Navbar from "./components/navbar/navbar.jsx";
-import About from "./components/about/about.jsx";
-import Experience from "./components/experience/experience.jsx";
-import Portfolio from "./components/portfolio/portfolio.jsx";
-import Contact from "./components/contact_me/contact.jsx";
-import { InfinitySpin } from "react-loader-spinner";
-import "./App.css";
+import React, { useState, useEffect } from 'react';
+import Landing from './components/landing/landing.jsx';
+import Navbar from './components/navbar/navbar.jsx';
+import About from './components/about/about.jsx';
+import Experience from './components/experience/experience.jsx';
+import Portfolio from './components/portfolio/portfolio.jsx';
+import Contact from './components/contact_me/contact.jsx';
+import { InfinitySpin } from 'react-loader-spinner';
+import './App.css';
 
 function App() {
   const [loading, setLoading] = useState(true);

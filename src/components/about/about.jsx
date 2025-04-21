@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import "../about/about.css";
-import my from "../../assets/IMG_4473.jpg";
-import githubIcon from "../../assets/github.svg";
-import gitlabIcon from "../../assets/gitlab-svgrepo-com.svg";
-import SkillCard from "./skillcard";
-import skillsData from "./skills.json";
+import React, { useState, useEffect } from 'react';
+import '../about/about.css';
+import my from '../../assets/IMG_4473.jpg';
+import githubIcon from '../../assets/github.svg';
+import gitlabIcon from '../../assets/gitlab-svgrepo-com.svg';
+import SkillCard from './skillcard';
+import skillsData from './skills.json';
 
 function About() {
   const [skills, setSkills] = useState([]);
@@ -44,7 +44,7 @@ function About() {
                   <img src={my} alt="Foto Saya" className="rounded img-fluid" />
                 </div>
                 <div className="col-12 col-md-7">
-                  <p className="fs-6 mb-4" style={{ textAlign: "justify" }}>
+                  <p className="fs-6 mb-4" style={{ textAlign: 'justify' }}>
                     I am an Information Technology student at Brawijaya
                     University with a strong passion for web development,
                     specializing in Back End engineering. Experienced in
