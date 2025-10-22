@@ -65,7 +65,14 @@ function About() {
                       </div>
                       <div className="col-12 col-sm-6 col-md-4">
                         <h6 className="fw-bold">Email</h6>
-                        <p>me@syahreza.site</p>
+                        <p id="email">
+                          <a
+                            href="mailto:me@syahreza.site"
+                            style={{ color: 'inherit', textDecoration: 'none' }}
+                          >
+                            me@syahreza.site
+                          </a>
+                        </p>
                       </div>
                     </div>
 

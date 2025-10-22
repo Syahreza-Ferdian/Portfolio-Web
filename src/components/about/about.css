@@ -27,6 +27,11 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
+#email:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
 .skill-card-icon {
   transition: transform 0.3s ease;
 }
