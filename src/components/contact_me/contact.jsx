@@ -164,7 +164,15 @@ function Contact() {
                     <strong>Call Me:</strong> +62 895-4149-49161
                   </p>
                   <p>
-                    <strong>Email Me:</strong> me@syahreza.site
+                    <strong>Email Me:</strong>{' '}
+                    <span id="email">
+                      <a
+                        href="mailto:me@syahreza.site"
+                        style={{ color: 'inherit', textDecoration: 'none' }}
+                      >
+                        me@syahreza.site
+                      </a>
+                    </span>
                   </p>
                 </div>
               </div>

@@ -15,6 +15,11 @@ textarea::placeholder {
   color: #fff !important;
 }
 
+#email:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
 input,
 textarea {
   color: #fff !important;
