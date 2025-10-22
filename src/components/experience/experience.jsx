@@ -84,7 +84,20 @@ function Experience() {
                     </h3>
                     <p className="company-name">PT. Aksamedia Mulia Digital</p>
                   </div>
-                  <p className="duration mt-4">02/2025 - Present</p>
+                  <p className="duration mt-4">02/2025 - 06/2025</p>
+                </div>
+              </div>
+
+              <div className="experience-item border-bottom">
+                <div className="timeline-icon"></div>
+                <div className="experience-content d-flex justify-content-between">
+                  <div className="job-details">
+                    <h3 className="job-title">
+                      Contract-based Full Stack Web Developer
+                    </h3>
+                    <p className="company-name">PT. Aksamedia Mulia Digital</p>
+                  </div>
+                  <p className="duration mt-4">07/2025 - 09/2025</p>
                 </div>
               </div>
             </div>
