@@ -52,7 +52,8 @@
       "Gorm",
       "PostgreSQL Database",
       "Redis",
-      "WebSocket"
+      "WebSocket",
+      "Docker"
     ]
   },
   {
@@ -89,5 +90,19 @@
     "description": "It is this website that you are currently viewing. I designed and developed this portfolio website to showcase my projects, skills, and experience. The website is built using React JS framework with a responsive design that adapts to different screen sizes. I also integrated a 'Contact Me' form that integrated into my email service to receive message from visitors.",
     "repositoryLink": "https://github.com/Syahreza-Ferdian/Portfolio-Web",
     "techStack": ["React JS", "JavaScript", "HTML", "CSS", "Bootstrap"]
+  },
+  {
+    "title": "Friend Recommendation System",
+    "date": "Nov 2025 - Dec 2025",
+    "description": "A backend system designed to provide friend recommendations using a graph-based approach. This project implements a microservices architecture with RESTful APIs, leveraging Neo4j to model user relationships and MongoDB as a document-oriented database for scalable data storage. Clean Architecture principles were applied by separating handler, repository, and database layers.",
+    "repositoryLink": "https://github.com/Syahreza-Ferdian/Friend-Recommendation-System",
+    "techStack": [
+      "Node.js",
+      "TypeScript",
+      "Neo4j",
+      "MongoDB",
+      "Docker",
+      "Kubernetes"
+    ]
   }
 ]

@@ -9,7 +9,8 @@ function Landing() {
           <p className="upper-text">Hello, I'm</p>
           <p className="name-text">Syahreza Fisti Ferdian</p>
           <small className="desc-land">
-            Undergraduate Student of Information Technology
+            Fresh Graduate in Information Technology passionate about web
+            development
           </small>
         </div>
       </div>

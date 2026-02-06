@@ -10,7 +10,10 @@
       "MySQL",
       "PostgreSQL",
       "Docker",
-      "Postman"
+      "Postman",
+      "Kubernetes",
+      "Neo4j Graph Database",
+      "MongoDB"
     ]
   },
   {

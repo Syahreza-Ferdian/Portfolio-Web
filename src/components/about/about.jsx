@@ -45,14 +45,12 @@ function About() {
                 </div>
                 <div className="col-12 col-md-7">
                   <p className="fs-6 mb-4" style={{ textAlign: 'justify' }}>
-                    I am an Information Technology student at Brawijaya
-                    University with a strong passion for web development,
-                    specializing in Back End engineering. Experienced in
-                    building scalable RESTful APIs, optimizing databases, and
-                    implementing secure server-side solutions using programming
-                    languages like PHP, Golang, and frameworks like Laravel. I
-                    am seeking opportunities to contribute my expertise to
-                    create impactful and reliable web applications
+                    Recent Information Technology graduate from Brawijaya
+                    University specializing in full-stack web development.
+                    Experienced in building scalable RESTful APIs, optimizing
+                    database performance, and translating UI designs into clean,
+                    maintainable front-end code. Strong interest in developing
+                    reliable and high-performance web applications.
                   </p>
 
                   <hr />
@@ -67,10 +65,10 @@ function About() {
                         <h6 className="fw-bold">Email</h6>
                         <p id="email">
                           <a
-                            href="mailto:me@syahreza.site"
+                            href="mailto:syahrezafistiferdian32@gmail.com"
                             style={{ color: 'inherit', textDecoration: 'none' }}
                           >
-                            me@syahreza.site
+                            syahrezafistiferdian32@gmail.com
                           </a>
                         </p>
                       </div>

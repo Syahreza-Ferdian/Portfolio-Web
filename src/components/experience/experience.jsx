@@ -1,6 +1,6 @@
 import React from 'react';
 import './experience.css';
-import MyCV from '../../assets/MyCV.pdf';
+import MyCV from '../../assets/MyCV_V2.pdf';
 
 function Experience() {
   return (
@@ -93,11 +93,11 @@ function Experience() {
                 <div className="experience-content d-flex justify-content-between">
                   <div className="job-details">
                     <h3 className="job-title">
-                      Contract-based Full Stack Web Developer
+                      Project-based Full Stack Web Developer
                     </h3>
                     <p className="company-name">PT. Aksamedia Mulia Digital</p>
                   </div>
-                  <p className="duration mt-4">07/2025 - 09/2025</p>
+                  <p className="duration mt-4">07/2025 - 10/2025</p>
                 </div>
               </div>
             </div>
