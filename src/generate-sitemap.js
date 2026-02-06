@@ -8,7 +8,9 @@ const __dirname = dirname(__filename);
 
 const sitemapPath = resolve(__dirname, '../public/sitemap.xml');
 
-const sitemap = new SitemapStream({ hostname: 'https://syahreza.site' });
+const sitemap = new SitemapStream({
+  hostname: 'https://syahrezaff.vercel.app/',
+});
 
 sitemap.write({ url: '/', changefreq: 'monthly', priority: 1.0 });
 
