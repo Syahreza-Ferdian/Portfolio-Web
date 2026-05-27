@@ -26,6 +26,18 @@ jobs:
       - name: Build React App
         run: npm run build
 
+      - name: Test write permission
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VM_HOST }}
+          username: ${{ secrets.VM_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            echo "User: $(whoami)"
+            ls -la /var/www/html/Portfolio-Web
+            touch /var/www/html/Portfolio-Web/test.txt && echo "Write OK" || echo "Write FAILED"
+            rm -f /var/www/html/Portfolio-Web/test.txt
+
       - name: Deploy to AWS VM Via SSH
         uses: appleboy/scp-action@v0.1.0
         with:
