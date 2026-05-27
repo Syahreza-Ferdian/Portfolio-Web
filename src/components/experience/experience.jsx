@@ -1,6 +1,6 @@
 import React from 'react';
 import './experience.css';
-import MyCV from '../../assets/MyCV_V2.pdf';
+import MyCV from '../../assets/MyCV_V3.pdf';
 
 function Experience() {
   return (
@@ -98,6 +98,19 @@ function Experience() {
                     <p className="company-name">PT. Aksamedia Mulia Digital</p>
                   </div>
                   <p className="duration mt-4">07/2025 - 10/2025</p>
+                </div>
+              </div>
+
+              <div className="experience-item border-bottom">
+                <div className="timeline-icon"></div>
+                <div className="experience-content d-flex justify-content-between">
+                  <div className="job-details">
+                    <h3 className="job-title">Software Engineer</h3>
+                    <p className="company-name">
+                      PT. Lautan Air Indonesia (Member of PT. Lautan Luas Tbk.)
+                    </p>
+                  </div>
+                  <p className="duration mt-4">04/2026 - Present</p>
                 </div>
               </div>
             </div>
