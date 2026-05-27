@@ -34,3 +34,4 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           source: 'dist/*'
           target: ${{ secrets.VM_TARGET }}
+          debug: true
