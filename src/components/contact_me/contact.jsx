@@ -167,10 +167,10 @@ function Contact() {
                     <strong>Email Me:</strong>{' '}
                     <span id="email">
                       <a
-                        href="mailto:syahrezafistiferdian32@gmail.com"
+                        href="mailto:me@syahreza.my.id"
                         style={{ color: 'inherit', textDecoration: 'none' }}
                       >
-                        syahrezafistiferdian32@gmail.com
+                        me@syahreza.my.id
                       </a>
                     </span>
                   </p>

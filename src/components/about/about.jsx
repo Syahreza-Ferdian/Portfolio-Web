@@ -65,10 +65,10 @@ function About() {
                         <h6 className="fw-bold">Email</h6>
                         <p id="email">
                           <a
-                            href="mailto:syahrezafistiferdian32@gmail.com"
+                            href="mailto:me@syahreza.my.id"
                             style={{ color: 'inherit', textDecoration: 'none' }}
                           >
-                            syahrezafistiferdian32@gmail.com
+                            me@syahreza.my.id
                           </a>
                         </p>
                       </div>
@@ -131,7 +131,7 @@ function About() {
 
                       <div className="me-2">
                         <a
-                          href="https://www.linkedin.com/in/syahreza-ferdian-b43647287/"
+                          href="https://www.linkedin.com/in/syahreza-ferdian/"
                           target="blank"
                         >
                           <img
