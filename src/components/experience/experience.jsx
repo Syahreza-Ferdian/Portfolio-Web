@@ -1,6 +1,6 @@
 import React from 'react';
 import './experience.css';
-import MyCV from '../../assets/MyCV_V3.pdf';
+import MyCV from '../../assets/MyCV_V4.pdf';
 
 function Experience() {
   return (
