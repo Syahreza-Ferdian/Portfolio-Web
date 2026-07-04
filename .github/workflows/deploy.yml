@@ -26,27 +26,6 @@ jobs:
       - name: Build React App
         run: npm run build
 
-      - name: Test Permission & Environment
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.VM_HOST }}
-          username: ${{ secrets.VM_USER }}
-          key: ${{ secrets.SSH_KEY }}
-          script: |
-            echo "=== User Info ==="
-            whoami
-            id
-            echo "=== Home Directory ==="
-            echo $HOME
-            ls -la $HOME
-            echo "=== Target Folder ==="
-            ls -la ${{ secrets.VM_TARGET }}
-            echo "=== Write Test ==="
-            touch ${{ secrets.VM_TARGET }}/test.txt && echo "Write OK" || echo "Write FAILED"
-            rm -f ${{ secrets.VM_TARGET }}/test.txt
-            echo "=== Disk Space ==="
-            df -h /var/www
-
       - name: Deploy to AWS VM Via SSH
         uses: appleboy/scp-action@v0.1.0
         with:
